@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Menu — Flip Cards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Links directly to your sibling CSS file -->
+    <link rel="stylesheet" href="coffee-styles.css">
+</head>
+<body>
+
+    <div class="page-title">
+        <h1>Pick your pour</h1>
+        <p>Four brews worth the wait</p>
+    </div>
+
+    <div class="wrapper">
+
+        <!-- Card 1: Espresso -->
+        <div class="card">
+            <input type="checkbox" id="coffee1" class="more" aria-hidden="true">
+            <div class="content">
+                <div class="front" style="background-image: url('https://images.unsplash.com/photo-1579992357154-faf4bde95b3d?auto=format&fit=crop&w=800&q=80')">
+                    <div class="inner">
+                        <div class="stamp"><i class="fas fa-mug-hot"></i></div>
+                        <div class="eyebrow">Classic</div>
+                        <div class="title-wrap">
+                            <h2><i class="fas fa-seedling title-icon"></i> Espresso</h2>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <label for="coffee1" class="button" aria-hidden="true">View Recipe</label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <div class="top-row">
+                            <span>Espresso · Single Shot</span>
+                            <span class="price">3.20€</span>
+                        </div>
+                        <div class="stats">
+                            <div class="info">
+                                <span class="value">63</span>
+                                <i class="fas fa-bolt"></i>
+                                <span class="label">mg caffeine</span>
+                            </div>
+                            <div class="info">
+                                <span class="value">25s</span>
+                                <i class="fas fa-clock"></i>
+                                <span class="label">Brew time</span>
+                            </div>
+                            <div class="info">
+                                <span class="value">30ml</span>
+                                <i class="fas fa-tint"></i>
+                                <span class="label">Size</span>
+                            </div>
+                        </div>
+                        <div class="strength">
+                            Strength
+                            <span class="dots">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                            </span>
+                        </div>
+                        <div class="description">
+                            <p>Pulled in 25 seconds from a dark-roast blend of Brazilian and Ethiopian beans. Thick crema, bold and short.</p>
+                            <p>No milk, no sugar — just the shot, the way it was meant to be tasted.</p>
+                        </div>
+                        <div class="divider"></div>
+                        <label for="coffee1" class="button return" aria-hidden="true">
+                            <i class="fas fa-arrow-left"></i> Back
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Cappuccino -->
+        <div class="card">
+            <input type="checkbox" id="coffee2" class="more" aria-hidden="true">
+            <div class="content">
+                <div class="front" style="background-image: url('https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80')">
+                    <div class="inner">
+                        <div class="stamp"><i class="fas fa-cloud"></i></div>
+                        <div class="eyebrow">Milk-based</div>
+                        <div class="title-wrap">
+                            <h2><i class="fas fa-seedling title-icon"></i> Cappuccino</h2>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <label for="coffee2" class="button" aria-hidden="true">View Recipe</label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <div class="top-row">
+                            <span>Cappuccino · Medium</span>
+                            <span class="price">4.10€</span>
+                        </div>
+                        <div class="stats">
+                            <div class="info">
+                                <span class="value">80</span>
+                                <i class="fas fa-bolt"></i>
+                                <span class="label">mg caffeine</span>
+                            </div>
+                            <div class="info">
+                                <span class="value">2min</span>
+                                <i class="fas fa-clock"></i>
+                                <span class="label">Brew time</span>
+                            </div>
+                            <div class="info">
+                                <span class="value">180ml</span>
+                                <i class="fas fa-tint"></i>
+                                <span class="label">Size</span>
+                            </div>
+                        </div>
+                        <div class="strength">
+                            Strength
+                            <span class="dots">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="far fa-circle empty"></i>
+                                <i class="far fa-circle empty"></i>
+                            </span>
+                        </div>
+                        <div class="description">
+                            <p>Equal parts espresso, steamed milk, and microfoam, finished with a dusting of cocoa. Light and airy on the tongue.</p>
+                            <p>Ask for oat or almond milk at no extra charge.</p>
+                        </div>
+                        <div class="divider"></div>
+                        <label for="coffee2" class="button return" aria-hidden="true">
+                            <i class="fas fa-arrow-left"></i> Back
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: Latte -->
+        <div class="card">
+            <input type="checkbox" id="coffee3" class="more" aria-hidden="true">
+            <div class="content">
+                <div class="front" style="background-image: url('https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80')">
+                    <div class="inner">
+                        <div class="stamp"><i class="fas fa-heart"></i></div>
+                        <div class="eyebrow">Milk-based</div>
+                        <div class="title-wrap">
+                            <h2><i class="fas fa-seedling title-icon"></i> Latte</h2>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <label for="coffee3" class="button" aria-hidden="true">View Recipe</label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <div class="top-row">
+                            <span>Latte · Large</span>
+                            <span class="price">4.50€</span>
+                        </div>
+                        <div class="stats">
+                            <div class="info">
+                                <span class="value">77</span>
+                                <i class="fas fa-bolt"></i>
+                                <span class="label">mg caffeine</span>
+                            </div>
+                            <div class="info">
+                                <span class="value">3min</span>
+                                <i class="fas fa-clock"></i>
+                                <span class="label">Brew time</span>
+                            </div>
+                            <div class="info">
+                                <span class="value">240ml</span>
+                                <i class="fas fa-tint"></i>
+                                <span class="label">Size</span>
+                            </div>
+                        </div>
+                        <div class="strength">
+                            Strength
+                            <span class="dots">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="far fa-circle empty"></i>
+                                <i class="far fa-circle empty"></i>
+                                <i class="far fa-circle empty"></i>
+                            </span>
+                        </div>
+                        <div class="description">
+                            <p>More steamed milk than a cappuccino, poured slow for a thin layer of foam and a heart on top.</p>
+                            <p>Mellow and comforting — the one to order when espresso alone feels like too much.</p>
+                        </div>
+                        <div class="divider"></div>
+                        <label for="coffee3" class="button return" aria-hidden="true">
+                            <i class="fas fa-arrow-left"></i> Back
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4: Cold Brew -->
+        <div class="card">
+            <input type="checkbox" id="coffee4" class="more" aria-hidden="true">
+            <div class="content">
+                <div class="front" style="background-image: url('https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80')">
+                    <div class="inner">
+                        <div class="stamp"><i class="fas fa-snowflake"></i></div>
+                        <div class="eyebrow">Cold</div>
+                        <div class="title-wrap">
+                            <h2><i class="fas fa-seedling title-icon"></i> Cold Brew</h2>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <label for="coffee4" class="button" aria-hidden="true">View Recipe</label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <div class="top-row">
+                            <span>Cold Brew · Large</span>
+                            <span class="price">4.60€</span>
+                        </div>
+                        <div class="stats">
+                            <div class="info">
+                                <span class="value">150</span>
+                                <i class="fas fa-bolt"></i>
+                                <span class="label">mg caffeine</span>
+                            </div>
+                            <div class="info">
+                                <span class="value">18h</span>
+                                <i class="fas fa-clock"></i>
+                                <span class="label">Brew time</span>
+                            </div>
+                            <div class="info">
+                                <span class="value">400ml</span>
+                                <i class="fas fa-tint"></i>
+                                <span class="label">Size</span>
+                            </div>
+                        </div>
+                        <div class="strength">
+                            Strength
+                            <span class="dots">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="far fa-circle empty"></i>
+                            </span>
+                        </div>
+                        <div class="description">
+                            <p>Steeped for 18 hours in cold water, never touched by heat. Smooth, low-acid, and naturally a little sweet.</p>
+                            <p>Served over ice with a splash of oat milk on the side, if you want it.</p>
+                        </div>
+                        <div class="divider"></div>
+                        <label for="coffee4" class="button return" aria-hidden="true">
+                            <i class="fas fa-arrow-left"></i> Back
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        Made with HTML &amp; CSS • Coffee Menu
+    </footer>
+
+</body>
+</html>
